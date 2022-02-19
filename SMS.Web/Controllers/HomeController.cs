@@ -7,7 +7,18 @@ namespace SMS.Web.Controllers;
 public class HomeController : Controller
 {
     public IActionResult Index(){
-        return Content("Web Development");
+        
+      DateTime date_Time = DateTime.Now;
+      
+      var longTime = date_Time.ToLongTimeString();
+
+      var message = "Time Now";
+
+      ViewBag.LongTime = longTime;
+      ViewBag.Message = message;
+ 
+      return View();
+
     }
 
     public IActionResult About(){
@@ -17,7 +28,7 @@ public class HomeController : Controller
        var about = new AboutViewModel 
        {
        Formed = new DateTime (2020, 1, 1),
-       CompanyName = "Google"
+       CompanyName = "Googazon"
        };    
    // render the view
    return View(about);

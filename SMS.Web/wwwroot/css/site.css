@@ -16,3 +16,31 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid lightgray;
+  border-left-color: silver;
+  border-left-width: .50rem;
+  border-radius: .25rem;
+}
+
+.callout-info {
+   border-left-color: deepskyblue;
+  
+}
+
+.callout-emerald {
+  border: 1px solid greenyellow;
+  border-left-color: green;
+  border-right-color: green;
+}
+
+.welcome{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  color: green;
+  
+}

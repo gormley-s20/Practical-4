@@ -1,10 +1,18 @@
 @model AboutViewModel
-<h1>About Us</h1>
-<h3>We are @Model.CompanyName</h3>
 
-<p>SMS is a Student Management System
-    @Model.FormedStr or @Model.Days days ago
+<h1 class = "custom">@Model.CompanyName</h1>
+
+<p><b>SMS is a Student Management System
+    @Model.FormedStr or @Model.Days days ago</b>
 </p>
 
+<style>
+    .custom {
+        font-family: Bush Script MT, Lucida Handwriting, cursive;
+        font-size:4;
+        color: royalblue;
+        
+    }
+</style>
 
-<p>The time is now @DateTime.Now</p>
+<p class = "custom">The time is now @DateTime.Now</p>
